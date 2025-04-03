@@ -10,7 +10,7 @@ services:
     container_name: prometheus
     restart: unless-stopped
     volumes:
-      - /etc/prometheus/:/etc/prometheus/
+      - ./prometheus/:/etc/prometheus/
       - prometheus_data:/prometheus
     ports:
       - 9090:9090
