@@ -18,3 +18,6 @@ copy prom config nach ll /etc/prometheus/prometheus.yaml
 openstack loadbalancer create --name testlb --vip-subnet-id p500884-mvorwerk-subnet --wait
 
 $ openstack loadbalancer listener create --name stats-listener --protocol PROMETHEUS --protocol-port 8088 testlb
+
+Import Dashboard
+https://grafana.com/grafana/dashboards/15828-openstack-octavia-amphora-load-balancer/
